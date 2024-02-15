@@ -26,4 +26,13 @@ public class JsonKafkaProducer {
                 .build();
         kafkaTemplate.send(message);
     }
+
+    //curl to post message
+   /* curl --location --request POST 'http://localhost:8080/api/v1/kafka/publish' \
+            --header 'Content-Type: application/json' \
+            --data-raw '{
+            "id": 3,
+            "firstname": "Pankhuri",
+            "lastname": "Agarwal"
+        }'*/
 }

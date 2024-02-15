@@ -1,0 +1,14 @@
+///notes to successfully run kafka on system
+
+type the below commands in kafka/bin/config folder CMD
+
+zookeeper-server-start.bat C:\kafka\config\zookeeper.properties -----------------check for port 2181
+
+kafka-server-start.bat C:\kafka\config\server.properties--------------------------check for port 9092
+
+Command to create topic:
+kafka-topics.bat --create --topic javaguides --bootstrap-server localhost:9092
+
+Command to read events:
+kafka-console-consumer.bat --topic javaguides --from-beginning --bootstrap-server localhost:9092
+
